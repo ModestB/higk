@@ -1,0 +1,100 @@
+/* ========================================================================== */
+/* SCSS VERIABLES */
+/* ========================================================================== */
+$color-main : #0140EC;
+
+
+/* ========================================================================== */
+/* GLOBAL */
+/* ========================================================================== */
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ========================================================================== */
+/* BOOTSTRAP 4 */
+/* ========================================================================== */
+
+.container-fluid{
+    min-width: 320px;
+}
+
+/* ========================================================================== */
+/* HEADER */
+/* ========================================================================== */
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+}
+.custom-toggler .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar{
+    padding: 0;
+}
+
+header {
+    min-height: 80px;
+    background-color: $color-main;
+
+    p{
+        font-size: 0.9rem;
+    }
+    a{
+        font-size: 1rem;
+        color: white;
+        margin: 0;
+    }
+    .img-logo{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .mod-lang{
+        padding: 5px;
+        border: 1px solid white;
+    }
+    .mod-lang:hover{
+        background-color: white;
+        color: $color-main;
+        text-decoration: none;
+    }
+} /* HEADER END */
+
+
+
+/* ========================================================================== */
+/* MEDIA QUERIES */
+/* ========================================================================== */
+@media only screen and (max-width: 450px) {
+    .navbar-brand{
+        margin: 0;
+    }
+
+}
+
+@media only screen and (min-width: 450px) {
+    header{
+        p{
+            font-size: 1.1rem;
+            font-weight: 600;
+   
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* MAKES dropdown menu to show on hover*/
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+    .dropdown > .dropdown-toggle:active {
+        /*Without this, clicking will make it sticky*/
+        pointer-events: none;
+    }
+
+    .navbar-nav {
+        li{
+            margin-left: 16px;
+        }
+    }
+}
