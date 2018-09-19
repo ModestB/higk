@@ -3,12 +3,14 @@
 /* ========================================================================== */
 $color-main : #0140EC;
 
-
 /* ========================================================================== */
 /* GLOBAL */
 /* ========================================================================== */
 body{
     font-family: 'Raleway', sans-serif;
+}
+a:hover{
+    text-decoration: none;
 }
 
 /* ========================================================================== */
@@ -61,18 +63,72 @@ header {
 } /* HEADER END */
 
 
+/* ========================================================================== */
+/* HERO CAROUSEL */
+/* ========================================================================== */
+.hero-carousel.container-fluid{
+    padding: 0;
+}
+.carousel-caption{
+    h4, p{
+        text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+.carousel-control-prev-icon{
+    font-size: 2rem;
+}
+
+.carousel-indicators{
+    justify-content: flex-start;
+}
+.carousel-caption{
+    text-align: left;
+}
+
+
+#heroCarousel{
+    display: none;
+}
+/* HERO carousel end */
+
+/* ========================================================================== */
+/* NEWS SECTION */
+/* ========================================================================== */
+
+.news{
+    .container{
+        border-top: 1px solid $color-main;
+        border-bottom: 1px solid $color-main;
+    }
+    .card-footer{
+        a{
+            line-height: 1rem;
+        }
+    }
+
+    a:hover{
+        i{
+            padding-left: 10px;
+            transition: linear 0.2s;
+        }
+    }
+}
+
 
 /* ========================================================================== */
 /* MEDIA QUERIES */
 /* ========================================================================== */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 576px) {
     .navbar-brand{
         margin: 0;
     }
 
 }
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 576px) {
     header{
         p{
             font-size: 1.1rem;
@@ -80,7 +136,21 @@ header {
    
         }
     }
+
+    #heroCarousel{
+        display: block;
+    }
+
 }
+
+@media only screen and (min-width: 768px) {
+
+  
+
+}
+
+
+
 
 @media only screen and (min-width: 992px) {
     /* MAKES dropdown menu to show on hover*/
@@ -97,4 +167,7 @@ header {
             margin-left: 16px;
         }
     }
+
 }
+
+@import 'vendors/_icomoon';
