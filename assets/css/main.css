@@ -5,7 +5,16 @@
 /* GLOBAL */
 /* ========================================================================== */
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  min-height: 100vh; }
+
+h1 {
+  padding-bottom: 3rem;
+  font-weight: 700; }
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700; }
 
 a:hover {
   text-decoration: none; }
@@ -15,6 +24,9 @@ a:hover {
 /* ========================================================================== */
 .container-fluid {
   min-width: 320px; }
+
+.container.top-border {
+  border-top: 1px solid #0140EC; }
 
 /* ========================================================================== */
 /* HEADER */
@@ -77,12 +89,15 @@ header {
 
 /* HERO carousel end */
 /* ========================================================================== */
+/* APIE MUS */
+/* ========================================================================== */
+.about-us img {
+  width: 100%;
+  height: auto; }
+
+/* ========================================================================== */
 /* NEWS SECTION */
 /* ========================================================================== */
-.news .container {
-  border-top: 1px solid #0140EC;
-  border-bottom: 1px solid #0140EC; }
-
 .news .card-footer a {
   line-height: 1rem; }
 
@@ -92,12 +107,53 @@ header {
   -o-transition: linear 0.2s;
   transition: linear 0.2s; }
 
+footer {
+  margin-top: auto;
+  padding-top: 30px;
+  color: #fff;
+  background-color: #0140EC; }
+  footer h2 {
+    font-size: 16px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff; }
+  footer a {
+    display: block;
+    color: #bacdff;
+    margin-bottom: 1rem; }
+  footer a:hover {
+    color: #fff; }
+
+.sidebar {
+  padding-left: 0px; }
+  .sidebar h2 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #0140EC; }
+  .sidebar .nav-item {
+    border-bottom: 1px solid #f2f2f2; }
+  .sidebar a {
+    color: #000; }
+  .sidebar a:hover i {
+    padding-right: 10px;
+    -webkit-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
+    transition: linear 0.2s; }
+  .sidebar .active {
+    color: #0140EC; }
+
 /* ========================================================================== */
 /* MEDIA QUERIES */
 /* ========================================================================== */
 @media only screen and (max-width: 576px) {
   .navbar-brand {
     margin: 0; } }
+
+@media only screen and (max-width: 992px) {
+  .card-deck .card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    margin-bottom: 15px; } }
 
 @media only screen and (min-width: 576px) {
   header p {
@@ -115,29 +171,3 @@ header {
     pointer-events: none; }
   .navbar-nav li {
     margin-left: 16px; } }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?mnkck2");
-  src: url("../fonts/icomoon/icomoon.eot?mnkck2#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?mnkck2") format("truetype"), url("../fonts/icomoon/icomoon.woff?mnkck2") format("woff"), url("../fonts/icomoon/icomoon.svg?mnkck2#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-arrow-right2 {
-  font-size: 0.9rem; }
-
-.icon-arrow-right2:before {
-  content: "\ea3c"; }
