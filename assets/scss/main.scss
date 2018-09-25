@@ -12,7 +12,7 @@ body{
 }
 
 h1{
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     font-weight: 700;
 }
 
@@ -26,6 +26,11 @@ a:hover{
 
 article{
     border-bottom: 1px solid $color-main;
+    margin-bottom: 2rem;
+    h2{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 /* ========================================================================== */
@@ -165,6 +170,7 @@ footer{
 
 .sidebar{
     padding-left:  0px;
+    margin-bottom: 30px;
     h2{
         padding-bottom: 5px;
         border-bottom: 1px solid $color-main;

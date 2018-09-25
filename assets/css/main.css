@@ -9,7 +9,7 @@ body {
   min-height: 100vh; }
 
 h1 {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   font-weight: 700; }
 
 h2 {
@@ -20,7 +20,11 @@ a:hover {
   text-decoration: none; }
 
 article {
-  border-bottom: 1px solid #0140EC; }
+  border-bottom: 1px solid #0140EC;
+  margin-bottom: 2rem; }
+  article h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem; }
 
 /* ========================================================================== */
 /* BOOTSTRAP 4 */
@@ -128,7 +132,8 @@ footer {
     color: #fff; }
 
 .sidebar {
-  padding-left: 0px; }
+  padding-left: 0px;
+  margin-bottom: 30px; }
   .sidebar h2 {
     padding-bottom: 5px;
     border-bottom: 1px solid #0140EC; }
