@@ -205,7 +205,11 @@ footer{
 
 }
 
-@media only screen and (max-width: 992px) { 
+@media only screen and (max-width: 992px) {
+    .dropdown-toggle{
+        display:none;
+    }
+    
     .card-deck .card{
         flex: 0 0 100%;
         margin-bottom: 15px;

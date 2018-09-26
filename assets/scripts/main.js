@@ -1,9 +1,7 @@
 function addFixedTop() {
     try {
         const header = document.querySelector('header');
-        console.log(header.offsetHeight)
         const nextElement = document.querySelector('header + section')
-        console.log(nextElement)
 
         window.addEventListener('scroll', () => {
             header.classList.add("fixed-top");
@@ -19,4 +17,12 @@ function addFixedTop() {
     };
 };
 
+// ONSCROLL collapses navbar
+function collapseNavOnScroll(){
+    const navbar = document.getElementById("navbarNav");
+    window.addEventListener('scroll', () => {
+        navbar.classList.remove('show');
+    });  
+};
+collapseNavOnScroll()
 addFixedTop()

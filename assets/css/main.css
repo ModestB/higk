@@ -157,6 +157,8 @@ footer {
     margin: 0; } }
 
 @media only screen and (max-width: 992px) {
+  .dropdown-toggle {
+    display: none; }
   .card-deck .card {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
